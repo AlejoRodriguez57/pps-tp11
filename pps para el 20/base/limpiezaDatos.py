@@ -17,9 +17,9 @@ areas["tap"] = areas["tap"].replace(tapFix)
 japFix = {
     -1: "Información no disponible",
     0: "Información no disponible",
-    1: "Nacional",
-    2: "Provincial",
-    3: "Municipal",
-    4: "Privado"
+    2: "Nacional",
+    3: "Provincial",
+    4: "Municipal",
+    5: "Privado"
 }
 areas["jap"] = areas["jap"].replace(japFix)
