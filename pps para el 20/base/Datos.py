@@ -22,7 +22,7 @@ st.header("Secciones principales de la página web")
 st.subheader("1. Conociendo nuestros datos")
 
 st.write("""
-Se puede ver qué datos tiene el dataset y cuántas áreas protegidas hay.
+Se muestran los datos que contiene que tenemos de las areas proteegidas y cuántas áreas protegidas hay.
 """)
 
 st.subheader("2. Superficies")
