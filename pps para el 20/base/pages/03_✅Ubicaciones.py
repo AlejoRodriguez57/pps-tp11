@@ -47,6 +47,10 @@ fig = px.scatter(
 ##
 
 st.title("Distribución general y ubicación de las áreas protegidas")
+st.write("""
+En esta seccion se observa dónde se ubican las áreas protegidas, su distribución
+y un mapa interactivo que ubica todas las áreas protegidas en un mapa.
+""")
 
 # Hay áreas protegidas en todas las provincias. Misiones tiene 61. Mapa.
 
@@ -59,7 +63,7 @@ tab_distribucion, tab_lat, tab_mapa = st.tabs([
 with tab_distribucion:
     st.subheader("Si representamos todas las ubicaciones en un gráfico de dispersión, se forma la silueta de Argentina.")
     st.plotly_chart(fig)
-    st.write("Esto significa que las áreas protegidas se distribuyen mayormente cerca de las fronteras externas (entre países). Por ello, forman la silueta.")
+    st.write("Esto significa que las áreas protegidas se distribuyen mayormente cerca de las fronteras exteriores (entre países). Por ello, forman la silueta.")
 
 with tab_lat:
     with st.expander("El área más al sur es"):
@@ -98,5 +102,3 @@ with tab_mapa:
 
     st.write("Como se puede ver en el mapa, no hay ninguna provincia que no tenga áreas protegidas.")
     st.write("La provincia con más áreas protegidas es Misiones, con un total de 61.")
-
-st.write(areas.dtypes)
