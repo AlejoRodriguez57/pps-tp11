@@ -1,3 +1,6 @@
+import os
+import sys
+
 import streamlit as st
 st.image('images/banner.png')
 
